@@ -34,7 +34,9 @@ define( [ "codemirror", "codemirror/addon/mode/simple" ], function( CodeMirror )
         token: "keyword" },
       
       // Minecraft Variables
-      { regex: /(?:address|amount|amplifier|custom|dataValue|dataTag|enchantmentLevel|maxCount|minutes|name|reason|seconds)\b/,
+      { regex: /(?:address|amount|amplifier|criterion|custom|dataValue|dataTag|duration|enchantmentLevel|maxCount|message|minutes|name|reason|seconds|value)\b/,
+        token: "em" },
+      { regex: /(?:displayName|objectiveName|tagName|teamName|triggerName)\b/,
         token: "em" },
 
       // Numbers
